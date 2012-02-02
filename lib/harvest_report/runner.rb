@@ -40,8 +40,6 @@ module HarvestReport
       page.fill_in "Password", :with => options[:password]
       page.click_button "Sign In"
 
-      page.click_link "Reports"
-
       element = page.find_link("My Profile")
       user_id = element[:href].scan(/\d+/).first
 
