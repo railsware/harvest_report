@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+require 'harvest_report'
+HarvestReport::Runner.run
